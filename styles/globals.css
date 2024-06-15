@@ -139,28 +139,28 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Error Title */
+
 .error-title {
   font-size: 3rem;
   margin: 0;
   color: #ff6347;
 }
 
-/* Error Code */
+
 .error-code {
   font-size: 10rem;
   margin: 20px 0;
   color: #333;
 }
 
-/* Error Message */
+
 .error-message {
   font-size: 1.2rem;
   margin: 0 0 20px;
   color: #666;
 }
 
-/* Error Button */
+
 .error-button {
   display: inline-block;
   padding: 10px 20px;
