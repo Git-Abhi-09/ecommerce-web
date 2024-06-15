@@ -79,7 +79,7 @@ interface Props {
   data: Product[];
 }
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getStaticProps: GetStaticProps<Props> = async () => {
   const res = await fetch('https://fakestoreapi.com/products');
   const data: Product[] = await res.json();
   return {
@@ -120,7 +120,7 @@ const Index: NextPage<Props> = ({ data }) => {
         </ul>
       </nav>
       <div className="main">
-        {data.map((curr) => (
+        {data.map((curr: Product) => (
           <div className="card" key={curr.id}>
             <div className="card-content">
               <Image src={curr.image} alt="Card image" height="400" width="250" className="card-image" />
@@ -138,3 +138,5 @@ const Index: NextPage<Props> = ({ data }) => {
 };
 
 export default Index;
+
+
