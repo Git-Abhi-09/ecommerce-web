@@ -15,16 +15,32 @@ const index = ({val}) => {
   return (
     <>
       <nav className="navbar">
-        <ul className="nav-list">
-            <li className="nav-item"><a href="#">Home</a></li>
-            <li className="nav-item"><a href="#">Contact</a></li>
-            <li className="nav-item"><a href="#">About</a></li>
-            <li className="nav-item"><a href="#">Information</a></li>
-            <li className="nav-item"><a href="#">Product</a></li>
-            <li className="nav-item">
-            </li>
+        <ul className="nav-item">
+            <Link href="/" legacyBehavior>
+                <a>Home</a>
+            </Link>
         </ul>
-    </nav>
+        <ul className="nav-item">
+            < Link href="/About" legacyBehavior>
+                <a>About</a>
+            </ Link>
+        </ul>
+        <ul className="nav-item" >
+            < Link href="/Contact" legacyBehavior>
+                <a>Contact</a>
+            </ Link>
+        </ul>
+        <ul className="nav-item">
+            < Link href="/Blog" legacyBehavior>
+                <a>Blog</a>
+            </ Link>
+        </ul>
+        <ul className="nav-item" >
+            <Link href="/Product" legacyBehavior>
+                <a>Product</a>
+            </Link>
+        </ul>
+      </nav>
     <div className="main">
     {
     val.map((curr)=>{

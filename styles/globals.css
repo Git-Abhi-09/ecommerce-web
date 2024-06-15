@@ -6,8 +6,10 @@
 }
 .navbar {
   background-color: #333;
-  overflow: hidden;
   border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .nav-list {
